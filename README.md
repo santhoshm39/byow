@@ -41,11 +41,11 @@ NewWorld Class:
       - numOverlaps(): returns the number of overlapping tiles that the next structure to be built will have (used within validateLoop())
 
 Summary of our algorithm:
-1. build a room in the middle of the world to start
-2. use the coordinates of the last structure built to get the coordinates for the next structure to be built
-3. validate the new coordinates a certain number of times
-4. if no valid coordinates are found, return to the middle and build from there
-5. repeate steps 2 - 4 until we either cannot find valid points in the middle, or we populate some percentage (i.e 90%) of the world with non-nothing tiles
+1. Build a room in the middle of the world to start
+2. Use the coordinates of the last structure built to get the coordinates for the next structure to be built
+3. Validate the new coordinates a certain number of times
+4. If no valid coordinates are found, return to the middle and build from there
+5. Repeate steps 2 - 4 until we either cannot find valid points in the middle, or we populate some percentage (i.e 90%) of the world with non-nothing tiles
          
 
-## Persistence
+
