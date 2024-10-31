@@ -9,7 +9,7 @@ Noah Kim
 ## Classes and Data Structures
 Class 1: NewWorld.java
 Instance Variables:
-    * WIDTH: static final variable representing the width of the world
+   - WIDTH: static final variable representing the width of the world
     * HEIGHT: static final variable representing the height of the world
     * widthLim: the limit on how wide a given structure can be
     * heightLim: the limit on how tall a given structure can be
