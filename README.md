@@ -1,10 +1,10 @@
 # Build Your Own World Design Document
 
 **Partner 1:**
-Noah Kim
+Santhosh Mathialagan
 
 **Partner 2:**
-Santhosh Mathialagan
+Noah Kim
 
 ## Classes and Data Structures
 Class 1: NewWorld.java
