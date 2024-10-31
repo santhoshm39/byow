@@ -37,7 +37,7 @@ NewWorld Class:
            - gets next coordinates using gentNextHallCoords()  or getNextRoomCoords()
      - getNextRoom/HallCoords(): updates the global variables with the next coordinates to be used
      - validateLoop(): validates that the current next coordinates are both within the world, will ensure connectedness, and will not overlap with existing structures too much
-           - if parameters do not work, validateLoop gets another set of coords using the getNextCoords methods and then validates those
+         - if parameters do not work, validateLoop gets another set of coords using the getNextCoords methods and then validates those
       - numOverlaps(): returns the number of overlapping tiles that the next structure to be built will have (used within validateLoop())
 
 Summary of our algorithm:
