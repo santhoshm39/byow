@@ -26,8 +26,15 @@ Instance Variables:
    - usage: the number of non-nothing tiles in our world
 
 ## Algorithms
+Summary of our algorithm:
+1. Build a room in the middle of the world to start
+2. Use the coordinates of the last structure built to get the coordinates for the next structure to be built
+3. Validate the new coordinates a certain number of times
+4. If no valid coordinates are found, return to the middle and build from there
+5. Repeate steps 2 - 4 until we either cannot find valid points in the middle, or we populate some percentage (i.e 90%) of the world with non-nothing tiles
+   
 NewWorld Class:
-   - all of the work is done in this class
+   - All of the work is done in this class
    - Methods:
       - Constructor: assigns starting values to our global variables if necessary
       - buildWorld():
@@ -40,12 +47,7 @@ NewWorld Class:
          - if parameters do not work, validateLoop gets another set of coords using the getNextCoords methods and then validates those
       - numOverlaps(): returns the number of overlapping tiles that the next structure to be built will have (used within validateLoop())
 
-Summary of our algorithm:
-1. Build a room in the middle of the world to start
-2. Use the coordinates of the last structure built to get the coordinates for the next structure to be built
-3. Validate the new coordinates a certain number of times
-4. If no valid coordinates are found, return to the middle and build from there
-5. Repeate steps 2 - 4 until we either cannot find valid points in the middle, or we populate some percentage (i.e 90%) of the world with non-nothing tiles
+
          
 
 
